@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <title>::Digi Recipes::</title>
+    <link href='https://fonts.googleapis.com/css?family=Gilda+Display' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href="//d3cizcpymoenau.cloudfront.net/assets/atk/stylesheets/theme-42054c08bec8bb76a7693b8c749dba85.css" media="all" rel="stylesheet" />
+    <link href="//d3cizcpymoenau.cloudfront.net/assets/common-print-708c449a3aab130ebbbb1ea916638bf2.css" media="print" rel="stylesheet" />
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="app.js"></script>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+      }
+
+      #recipe {
+        display: block;
+        width: 800px;
+      }
+
+      .featured-image {
+        position: relative;
+        float: right;
+        margin: 20px 60px 25px 25px;
+        border: 1px solid rgba(0,0,0,.6);
+        border-radius: 25px;
+      }
+
+      #save-btn {
+        position: absolute;
+        bottom: 10px;
+        right: 5px;
+      }
+
+      .ingredients > ul > li{
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div id="recipe"></div>
+          <input id="save-btn" class="form-contro pull-right btn-sm" type="button" name="Save" value="Save" title="Save" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
