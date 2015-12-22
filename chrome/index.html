@@ -9,7 +9,18 @@
     <link href="//d3cizcpymoenau.cloudfront.net/assets/atk/stylesheets/theme-42054c08bec8bb76a7693b8c749dba85.css" media="all" rel="stylesheet" />
     <link href="//d3cizcpymoenau.cloudfront.net/assets/common-print-708c449a3aab130ebbbb1ea916638bf2.css" media="print" rel="stylesheet" />
     <script src="jquery-2.1.4.min.js"></script>
-    <script src="app.js"></script>
+    <script type="text/javascript">
+      function save() {
+        alert('Saving')
+        chrome.extension.sendRequest(
+          {method: "getLocalStorage", key: "name"},
+          function(response) {
+            alert(response.data);
+          }
+        );
+      }
+    </script>
+
     <style>
       body {
         font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
@@ -47,9 +58,10 @@
       <div class="row">
         <div class="col-md-8">
           <div id="recipe"></div>
-          <input id="save-btn" class="form-contro pull-right btn-sm" type="button" name="Save" value="Save" title="Save" />
+          <input id="save-btn" class="form-contro pull-right btn-sm" type="button" name="Save" value="Save" title="Save" onclick="save()" />
         </div>
       </div>
     </div>
+  <script src="app.js"></script>
   </body>
 </html>
