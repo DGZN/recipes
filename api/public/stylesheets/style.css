@@ -1,8 +1,52 @@
 body {
   padding: 50px;
+  background: white !important;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+#recipe {
+  font-size: 14px;
+}
+
+#recipe h4 {
+  font-size: 18px;
+}
+
+ul li {
+  background-image: none !important;
+}
+
+.featured-image {
+  float: right;
+  margin: 5px 5px 0px 15px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.ingredients > ul {
+  margin: 25px;
+}
+
+.ingredients > ul > li {
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.instructions {
+  font-size: 14px;
+}
+
+.aside h4 {
+  display: none;
+}
+
+.aside h3 {
+  margin-top: 25px;
+}
+
+.aside img {
 }
